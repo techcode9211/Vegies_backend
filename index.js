@@ -60,7 +60,7 @@ app.post('/uploaddata',async (req,resp)=>{
 })
 
 app.get('/product',async(req,resp)=>{
-    const Result=await Product.find({})
+    const Result=await Product.find()
     resp.send(JSON.stringify(Result))
 })
 
